@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0" />
+    <title>Stairway beauty and parlor website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="header3">
+      <nav>
+        <a href="index.html"> </a>
+         <div class="nav-links">
+          <ul>
+            <li>
+              <a href="home page.html"
+                ><h1><b>HOME</b></h1></a
+              >
+            </li>
+           
+            <li>
+              <a href="contact page.html"
+                ><h1><b>CONTACT</b></h1></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!--printing-->
+    <section>
+      <!DOCTYPE html>
+      <div class="print">
+        <html>
+          <body>
+            <h2>You can print the filled payment form here</h2>
+
+            <p>Click the button to print your form.</p>
+            </div>
+    </section>
+    <section>
+      <div class="btn">
+            <button onclick="window.print()">Print  a preview of this page</button>
+          </body>
+        </html>
+      </div>
+    </section>
+    <!--This is the payment form-->
+   <section>
+    <form
+                style="
+                  font-family: 'Dekko';
+                  font-size: 19px;
+                  margin-top: 10px;
+                  width: 300px;
+                  /* border: 1px solid white; */
+                  width: 500px;
+                  margin-left: 40px;
+                  display: flex;
+                  flex-direction: column;
+                "
+                action="save_booking.php"
+                method="POST"
+              >
+
+                <label for="name"></label>
+                <input
+                  style="
+                    font-family: 'Dekko';
+                    font-size: 19px;
+                    /* margin-top: 10px; */
+                    width: 400px;
+                    background: inherit;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    /* color: white; */
+                  "
+                  type="text"
+                  name="user_name"
+                  placeholder="Full Name*"
+                  id="name"
+                  required
+                />
+
+                <label class="phone" for="phone"></label>
+                <input
+                  style="
+                    font-family: 'Dekko';
+                    font-size: 19px;
+                    margin-top: 10px;
+                    width: 400px;
+                    background: inherit;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    color: black;
+                    /* margin-left: 10px; */
+                  "
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  id="phone"
+                  required
+                /><br />
+
+                <label for="email"></label>
+                <input
+                  style="
+                    font-family: 'Dekko';
+                    font-size: 19px;
+                    margin-top: -20px;
+                    width: 400px;
+                    background: inherit;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    color: black;
+                  "
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  id="email"
+                  required
+                /><br />
+                
+                <!-- Add more fields as needed -->
+
+                <input
+                  style="
+                    font-family: 'Dekko';
+                    width: 150px;
+                    font-size: 19px;
+                    margin-top: -20px;
+                    border-radius: 5px;
+                    background-color: #deff58;
+                    cursor: pointer;
+                    border: none;
+                  "
+                  class="submit"
+                  type="submit"
+                  value="Lipa na Mpesa"
+                />
+              </form> 
+   </section>
+  </body>
+</html>
